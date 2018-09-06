@@ -1,3 +1,4 @@
+
 //Write a c++ program to print half diamond star patern
 //First include library
 #include<iostream>
@@ -17,10 +18,10 @@ int main()
 		//To change the rows
 		cout<< endl;
 	}
-	for(int i=1;i<n;i++)
+	for(int i=1;i<=n;i++)
 	{		
 		//Use loop so that it will print stars in the row
-		for(int j=(n-1);j>=i;j--)
+		for(int j=n;j>i;j--)
 		{
 			cout<<"*";
 		}
