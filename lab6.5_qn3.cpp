@@ -12,6 +12,7 @@ int main()
 {
     //Declare variables
     long i,j,n,count;
+    //Initiate a new variable in order to compare it with the number later
     long z=1225;
     cout<<"Enter number:"<<endl;
     cin>>n;
@@ -33,6 +34,7 @@ int main()
                 {
                     //Print the required values
                     cout<<"The next number is:"<<sq<<endl;
+                    //Assign the number got to the variable used for comparing so that one can get next required number
                     z=sq;
                     //Put condition to break the first loop and get only one output
                     i=-1;
