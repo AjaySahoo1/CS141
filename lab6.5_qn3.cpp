@@ -1,9 +1,8 @@
 /******************************************************************************
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
+The integer 36 has a peculiar property: it is a perfect square, and is also the sum of the integers from 1 through 8. 
+The next such number is 1225 which is 352, and the sum of the integers from 1 through 49.
+Find the next number (or numbers) that is a perfect square and also the sum of a series 1...n.
 *******************************************************************************/
 //Include library
 #include <iostream>
