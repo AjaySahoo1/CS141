@@ -1,13 +1,11 @@
 /******************************************************************************
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
+  Apples cost Re1 each, mangoes cost Rs3 each, and 1 banana is only Rs0.50.
+  You bought 100 fruits for Rs100, How many of each fruit did you buy?
+  Display all variations of answer.
 *******************************************************************************/
 //Include library
 #include <iostream>
-
 using namespace std;
 //Main function
 int main()
