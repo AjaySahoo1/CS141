@@ -35,7 +35,7 @@ float choice2(int n)
 //Function for third choice
 float choice3(int n)
 {
-    float sal=(20*(n/2))+((n*225)*0.2);
+    float sal=(20*n)+((n*225)*0.2);
     return sal;
 }
 //Main function
