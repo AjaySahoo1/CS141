@@ -1,33 +1,30 @@
 /******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
+Write a C++ program to print all natural numbers between 1 to n using recursion.
 *******************************************************************************/
 
 #include <iostream>
 
 using namespace std;
+//Define function
 int num(int i,int n)
 {
-    i;
-    if(i>n)
+    if(i>n)//Put condition to end the recursion
     return 1;
     else
     {
-        cout<<i<<" ";
-        num(i+1,n);
+        cout<<i<<" ";//Print the values
+        num(i+1,n);//Recursion
     }
 }
-
+//Main function
 int main()
 {
-    int n;
+    int n;//Declare variable
+    //Take Input
     cout<<"Enter number:";
     cin>>n;
     
-    num(1,n);
+    num(1,n);//call the function
 
     return 0;
 }
