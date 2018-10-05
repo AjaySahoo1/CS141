@@ -1,33 +1,40 @@
 /******************************************************************************
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
+ Write a C++ program to find factorial of any number using recursion.
 *******************************************************************************/
 
 #include <iostream>
 
 using namespace std;
-int num(int i,int n)
+//Define Factorial Fuction having one formal parameter
+int fact(int i)
 {
-    i;
-    if(i>n)
+    //Put condition to end the recursion
+    if(i==0)
     return 1;
     else
     {
-        cout<<i<<" ";
-        num(i+1,n);
+        //return factorial by recursion
+        return i*fact(i-1);
     }
 }
-
+//Main Function
 int main()
 {
-    int n;
-    cout<<"Enter number:";
+    int n;//Declare variable for input
+    //Take the number as input
+    cout<<"Enter number:"<<endl;
     cin>>n;
-    
-    num(1,n);
+    //Put condition to check the validity of the number
+    if(n<0)
+    {
+        cout<<"Invalid input";
+    }
+    else
+    {
+      //Print the factorial
+      cout<<"Factorial of "<<n<<"="<<fact(n);
+    }
 
     return 0;
 }
