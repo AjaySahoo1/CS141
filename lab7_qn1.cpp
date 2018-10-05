@@ -1,33 +1,51 @@
 /******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
+ Write a C++ program to find power of any number using recursion.
 *******************************************************************************/
 
 #include <iostream>
 
 using namespace std;
-int num(int i,int n)
+//Define Power Fuction
+float power(float x,float y,float z)
 {
-    i;
-    if(i>n)
-    return 1;
+    //Put condition to find different values for different exponent
+    if(z>0)
+    {
+        //Put condition to end the recursion
+        if(y>z)
+        return 1;
+        else
+        {
+            //return power by recursion
+            return x*power(x,y+1,z);
+        }
+    }
+    else if(z==0)
+    {
+        return 1;
+    }
     else
     {
-        cout<<i<<" ";
-        num(i+1,n);
+        //Put condition to end the recursion
+        if(y>(-z))
+        return 1;
+        else
+        {
+            //return power by recursion
+            return power(x,y+1,z)/x;
+        }
     }
 }
-
+//Main Function
 int main()
 {
-    int n;
-    cout<<"Enter number:";
+    float n,z;//Declare variable for input
+    //Take the number as input
+    cout<<"Enter base:"<<endl;
     cin>>n;
-    
-    num(1,n);
-
+    cout<<"Enter exponent:"<<endl;
+    cin>>z;
+    //Print the power
+    cout<<"Power of base "<<n<<" with exponent "<<z<<"="<<power(n,1,z);
     return 0;
 }
