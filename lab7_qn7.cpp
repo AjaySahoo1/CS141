@@ -8,12 +8,12 @@ using namespace std;
 int pal(int num) 
 {
     //Use static variable so that it won't change during recursion
-    static int rev,sum;
+    static int rem,sum;
     //Put condition to find the reverse
     if(num>0)
     {
-      rev = num%10;
-      sum = sum*10 + rev;
+      rem = num%10;
+      sum = sum*10 + rem;
       //Recursion
       pal(num/10);
     }
