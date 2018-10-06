@@ -1,25 +1,28 @@
 /******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
+ Write a C++ program to find sum of all natural numbers between 1 to n using recursion.
 
 *******************************************************************************/
 
 #include <iostream>
 using namespace std;
+//Define function
 int sum(int n)
 {
-    if(n!=0)
+  //Put condition for recursion and its turmination
+  if(n!=0)
     return n+sum(n-1);
-    else
+  else
     return 0;
 }
+//Main function
 int main()
 {
-    int n;
-    cout<<"Enter n:";
-    cin>>n;
-    cout<<"sum of numbers from 1 to n:"<<sum(n);
-    return 0;
+  //Declare variable
+  int n;
+  //Taking input
+  cout<<"Enter n:";
+  cin>>n;
+  //Printing the value
+  cout<<"sum of numbers from 1 to n:"<<sum(n);
+  return 0;
 }
