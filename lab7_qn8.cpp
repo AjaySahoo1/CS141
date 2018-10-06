@@ -1,5 +1,5 @@
 /******************************************************************************
- Write a C++ program to check whether a number is palindrome or not using recursion.
+ Write a C++ program to find sum of digits of a given number using recursion.
 *******************************************************************************/
 
 #include <iostream>
