@@ -11,11 +11,11 @@ using namespace std;
 
 int reverse(int num) 
 {
-    static int temp,sum;
+    static int rem,sum;
     if(num>0)
     {
-      temp = num%10;
-      sum = sum*10 + temp;
+      rem = num%10;
+      sum = sum*10 + rem;
       /* function call itself. */
       reverse(num/10);
     }
