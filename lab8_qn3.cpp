@@ -1,5 +1,4 @@
 #include<iostream>
-#include<algorithm> 
 using namespace std;
 //Define function with proper parameters
 int klarge(int ar[], int size,int k)
