@@ -23,7 +23,7 @@ return ar[k-1];
 int ksmall(int ar[], int size,int k)
 {
 	int x;
-//sort array in descending order
+//sort array in ascending order
 	for(int i=0;i<size;i++)
 	{
 		for(int j=i+1;j<size;j++)
