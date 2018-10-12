@@ -1,3 +1,6 @@
+/*Write a program to find the largest, smallest, mean, median,
+elements with highest frequency of the elements of all elements of an array.
+(Use functions for each of the task in the question)*/
 #include<iostream>
 using namespace std;
 //Define function with proper parameters
