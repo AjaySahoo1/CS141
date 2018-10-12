@@ -1,3 +1,6 @@
+/* Write a program for kth largest,
+kth smallest element of an array. 
+(Use functions : e.g. klarge (int array[], int size, int k), similarly for smallest)*/
 #include<iostream>
 using namespace std;
 //Define function with proper parameters
