@@ -10,7 +10,7 @@ int reverse(int num)
 {
   //Declare static variables
   static int rem,sum;
-  ..Put condition for recursion and its turnmination
+  //Put condition for recursion and its turnmination
   if(num>0)
   {
     rem = num%10;
