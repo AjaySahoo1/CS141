@@ -1,3 +1,4 @@
+//Write a program to find sum of all elements of an array. (Use functions)
 #include<iostream>
 using namespace std;
 //Define function with proper parameters
