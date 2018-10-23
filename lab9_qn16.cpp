@@ -1,4 +1,4 @@
-/* Write a program to show string repeatedly by shifting top character of string to right.  */
+/* Write a program to show string repeatedly by shifting top character of string right to left.  */
 
 #include <iostream>
 using namespace std;
