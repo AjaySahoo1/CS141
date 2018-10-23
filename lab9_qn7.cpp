@@ -42,7 +42,7 @@ int main()
     else
     {
         cout<<"Size of the array is zero"<<endl;
-        cout<<"Max="<<NULL;
+        cout<<"Max=NULL";
     }
     return 0;
 }
