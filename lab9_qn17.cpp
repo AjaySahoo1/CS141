@@ -1,4 +1,10 @@
-/* Write a program to show string repeatedly by shifting top character of string to right.  */
+/* Implement your versions for the following functions: 
+Strcpy
+Strcat
+Strlen
+Strcmp
+Strchr
+Strstr  */
 
 #include <iostream>
 #include<cstring>
