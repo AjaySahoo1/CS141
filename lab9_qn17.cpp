@@ -38,9 +38,9 @@ int main()
     if(result==0)
     cout<<"Strings are same"<<endl;
     else if(result>0)
-    cout<<"The length of str is more than str2"<<endl;
+    cout<<"The ascii value of the character of str after 1st mismatch is more than that of str2"<<endl;
     else
-    cout<<"The length of str is less than str2"<<endl;
+    cout<<"The ascii value of the character of str after 1st mismatch is less than that of str2"<<endl;
     
     //Implementation of strchr function
     cout<<"Use of strchr function"<<endl;
