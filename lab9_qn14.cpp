@@ -8,7 +8,7 @@ int main()
 {
     char ar[20];
     cout<<"Enter your name:"<<endl;
-    cin>>ar;
+    cin.getline(ar,20);
     //Print string character by character using normal index method
     cout<<"Using normal index method"<<endl;
     for(int i=0;i<10;i++)
