@@ -57,19 +57,19 @@ int main() {
    r2.setLength(l2); 
    r2.setBreadth(b2); 
 
-   // area of box 1
+   // area of rectangle 1
    area1 = r1.getArea();
    cout << "Area of rectangle1 : " << area1 <<endl;
 
-   // perimeter of box 2
+   // perimeter of rectangle 2
    perimeter1 = r1.getPerimeter();
   cout << "Perimeter of rectangle1 : " << perimeter1 <<endl;
 
-    // area of box 1
+    // area of rectangle 1
    area2 = r2.getArea();
    cout << "Area of rectangle1 : " << area2 <<endl;
 
-   // perimeter of box 2
+   // perimeter of rectangle 2
    perimeter2 = r2.getPerimeter();
    cout << "Perimeter of rectangle1 : " << perimeter2 <<endl;
 
