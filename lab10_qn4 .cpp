@@ -104,11 +104,16 @@ class Rectangle : public Point
 
 //Lab 7 exercise 4.2, 4.3: Add class Rectangle declaration HERE: 
   Point p1,p2,p3,p4;
-  int side1,side2;
+  int s1,s2;//varibale to store the value of sides
+  int side1();
+  int side2();
 public:
     Rectangle(Point c1,Point c2);
     Rectangle ();
     int area();
+    //member function to access the private member function
+    int l1();
+    int l2();
 };
 Rectangle::Rectangle(Point c1, Point c2)
 {
@@ -127,18 +132,33 @@ Rectangle::Rectangle(Point c1, Point c2)
     cout<<"For point 3 of rectangle:"<<endl;
     p3.Print(p3.Get_X(),p3.Get_Y());
     cout<<"For point 4 of rectangle:"<<endl;
-    p4.Print(p4.Get_X(),p4.Get_Y());
-    side1=p4.Get_Y()-p1.Get_Y();
-    side2=p3.Get_X()-p1.Get_X();
-}
+    p4.Print(p4.Get_X(),p4.Get_Y());}
+
 // ********************************************************************
 //  Methods for class Rectangle
 // ********************************************************************
-  
+int Rectangle::side1()
+{
+    s1=p4.Get_Y()-p1.Get_Y();
+}
+int Rectangle::side2()
+{
+    s2=p3.Get_X()-p1.Get_X();
+}
+int Rectangle::l1()
+{
+    side1();
+    return s1;
+}
+int Rectangle::l2()
+{
+    side2();
+    return s2;
+}
 //Lab 7 exercise 4.2, 4.3. Add class Rectangle methods HERE: 
 int Rectangle::area()
 {
-    int area=side1*side2;
+    int area=l1()*l2();
     return area;
 }
 
